@@ -108,9 +108,9 @@ export const birthdayContent = {
   photos: [
     { src: '/assets/videos/1.mp4', rotation: -6, size: 'medium', caption: 'the beginning' },
     { src: '/assets/videos/2.mp4', rotation: 4, size: 'large', caption: 'that day ♡' },
-    { src: '/assets/videos/3.mp4', rotation: -3, size: 'small', caption: 'us' },
-    { src: '/assets/videos/4.mp4', rotation: 7, size: 'medium', caption: 'my favorite' },
-    { src: '/assets/videos/5.mp4', rotation: -8, size: 'small', caption: 'silly' },
-    { src: '/assets/videos/6.mp4', rotation: 2, size: 'medium', caption: 'home' },
+    { src: '/assets/videos/3.mp4', rotation: -3, size: 'small', caption: 'youuuuu' },
+    { src: '/assets/videos/4.mp4', rotation: 7, size: 'medium', caption: 'Amore mio' },
+    { src: '/assets/videos/5.mp4', rotation: -8, size: 'small', caption: 'My favorite' },
+    { src: '/assets/videos/6.mp4', rotation: 2, size: 'medium', caption: 'mi therapisttt' },
   ],
 }

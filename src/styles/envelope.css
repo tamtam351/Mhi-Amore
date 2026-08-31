@@ -1,0 +1,87 @@
+.envelope-scene {
+  gap: 26px;
+}
+
+.envelope {
+  position: relative;
+  width: 200px;
+  height: 130px;
+  cursor: pointer;
+  animation: floatY 5s ease-in-out infinite;
+  filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.55));
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.envelope-body {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #f7f1e6, #e9dfcc);
+  border-radius: 6px;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62%;
+  background: linear-gradient(160deg, #efe6d4, #ddcfb2);
+  clip-path: polygon(0 0, 100% 0, 50% 68%);
+  transform-origin: top center;
+  transition: transform 0.9s var(--ease-cinematic);
+  border-radius: 6px 6px 0 0;
+  z-index: 3;
+}
+
+.envelope.is-open .envelope-flap {
+  transform: rotateX(150deg);
+}
+
+.envelope-seal {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: var(--blue-soft);
+  z-index: 4;
+  filter: drop-shadow(0 0 8px rgba(83, 109, 255, 0.6));
+  transition: transform 0.3s ease;
+}
+
+.envelope.is-open .envelope-seal {
+  transform: translate(-50%, -50%) scale(1.3);
+  opacity: 0;
+}
+
+.envelope-letter-peek {
+  position: absolute;
+  bottom: 8px;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: var(--paper);
+  border-radius: 4px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: transform 0.9s var(--ease-cinematic) 0.15s;
+  transform: translateY(0);
+}
+
+.envelope.is-open .envelope-letter-peek {
+  transform: translateY(-58px);
+}
+
+.final-scene {
+  padding-top: 6vh;
+  gap: 18px;
+}
+
+.final-hearts span {
+  position: absolute;
+  color: var(--blue-soft);
+  opacity: 0.7;
+  animation: driftUp 8s ease-in infinite;
+}

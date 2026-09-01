@@ -53,10 +53,9 @@
   font-size: 0.95rem;
 }
 
-.polaroid--small { width: 108px; height: 128px; }
-.polaroid--medium { width: 134px; height: 158px; }
-.polaroid--large { width: 158px; height: 186px; }
-
+.polaroid--small { width: 140px; height: 166px; }
+.polaroid--medium { width: 174px; height: 206px; }
+.polaroid--large { width: 208px; height: 246px; }
 .polaroid--enter-up { animation: fadeInUp 0.9s var(--ease-cinematic) both; }
 .polaroid--enter-left { animation: slideFromLeft 0.9s var(--ease-cinematic) both; }
 .polaroid--enter-scale { animation: scaleIn 0.9s var(--ease-cinematic) both; }
